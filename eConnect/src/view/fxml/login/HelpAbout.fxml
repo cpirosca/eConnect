@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.login.HelpController">
+   <children>
+      <Text layoutX="172.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OOP">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="75.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students Management">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="closeHAbout" onAction="#closeHelpAbout" layoutX="147.0" layoutY="126.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="105.0" text="Close">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

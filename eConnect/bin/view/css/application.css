@@ -1,0 +1,81 @@
+#userInput{/*Login */
+	-fx-background-color: rgba(0,53,84,0.3);
+	-fx-background-radius: 10;
+	-fx-text-fill: white;
+}
+
+#loginButtons{/*Login */
+	-fx-background-color: rgba(0,53,84,0.3);
+	-fx-text-fill: #cdcdcd;
+}
+#anchorPane{
+	-fx-background-color: rgb(0,35,54);
+}
+#studentAddInput{/*OfficeAdd textfields */
+	-fx-background-color:rgb(0,101,153);
+	-fx-text-fill: #cdcdcd;
+}
+#dragDrop{/*OfficeAdd */
+	-fx-background-color:#fafafa;
+	-fx-background-radius:4;
+}
+#dragDropInside{/*OfficeAdd */
+	-fx-background-color:rgba(205,205,205,0.5);
+	-fx-background-radius:10;
+}
+#browseLabel:hover{
+	-fx-cursor:hand;
+}
+#splitBar{/*OfficeAdd */
+	-fx-background-color: #757575;
+	-fx-background-radius:10;
+}
+#officeAddButtons{/*officeAdd */
+	-fx-border-color: #cdcdcd;
+	-fx-border-radius:7;
+	-fx-background-radius:7;
+}
+#officeAddButtons:hover{
+	-fx-cursor: hand;
+	-fx-scale-y:1.03;
+	-fx-scale-x:1.03;
+}
+#officeButtons{
+	-fx-background-color: rgb(0,101,153);
+	-fx-cursor: hand;
+}
+#officeButtons:hover{
+	-fx-background-radius: 10px;
+	-fx-scale-y: 1.2;
+	-fx-scale-x: 1.2;
+}
+#officeButtons:pressed{
+	-fx-background-color: rgb(0,86,132);
+}
+#deleteLabel{/*Delete Labels */
+	-fx-background-color:rgb(0,101,153);
+	-fx-background-radius: 5;
+	-fx-text-fill:white;
+}
+#studentDetails{/*Students */
+	-fx-background-color:rgb(0,133,204);
+	-fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.4), 10, 1, -10, 10);
+	-fx-background-radius:5;
+}
+#studentLabels{
+	-fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.4), 3.5, 1, -1, 1);
+	-fx-text-fill:#cdcdcd;
+	-fx-font-size: 28px;
+}
+#studentLabelsDetails{
+	-fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.4), 2.5, 1, -1, 1);
+	-fx-text-fill:#cdcdcd;
+	-fx-font-size: 20px;
+}
+#closeLabel:hover{
+	-fx-cursor: hand;
+}
+#anchorPaneText .content{/*teacher */
+	-fx-background-color: rgba(0,53,84,0.5);
+	-fx-text-fill: #cdcdcd;
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="anchorPane" prefHeight="579.0" prefWidth="1100.0" stylesheets="@../../../../bin/view/css/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.teach.TeachController">
+   <children>
+      <AnchorPane id="splitBar" layoutX="548.0" layoutY="25.0" prefHeight="529.0" prefWidth="5.0" />
+      <Label id="studentLabels" layoutX="181.0" layoutY="25.0" text="Adauga nota" />
+      <Label id="studentLabels" layoutX="748.0" layoutY="25.0" text="Adauga proiect" />
+      <JFXButton id="officeAddButtons" layoutX="219.0" layoutY="514.0" onAction="#addGrade" text="Adauga" textFill="#cdcdcd">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="officeAddButtons" layoutX="801.0" layoutY="514.0" onAction="#addAssignment" text="Adauga" textFill="#cdcdcd">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="91.0" prefHeight="397.0" prefWidth="518.0">
+         <columns>
+            <TableColumn fx:id="nume" prefWidth="129.0" text="Nume" />
+            <TableColumn fx:id="prenume" prefWidth="147.0" text="Prenume" />
+            <TableColumn fx:id="cnp" prefWidth="185.0" text="CNP" />
+            <TableColumn fx:id="nota" minWidth="0.0" prefWidth="55.0" text="Nota" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tableView1" layoutX="591.0" layoutY="91.0" prefHeight="397.0" prefWidth="148.0">
+         <columns>
+            <TableColumn fx:id="select" prefWidth="24.0" />
+            <TableColumn fx:id="grupa" prefWidth="122.0" text="Grupa" />
+         </columns>
+      </TableView>
+      <TextArea id="anchorPaneText" fx:id="textArea" layoutX="758.0" layoutY="91.0" prefHeight="397.0" prefWidth="319.0" />
+   </children>
+</AnchorPane>

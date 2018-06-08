@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anchorPane" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../../../../bin/view/css/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.office.AddController">
+   <children>
+      <AnchorPane id="dragDrop" layoutX="522.0" layoutY="38.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" prefHeight="502.0" prefWidth="424.0">
+         <children>
+            <AnchorPane id="dragDropInside" layoutX="20.0" layoutY="20.0" prefHeight="461.0" prefWidth="382.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="116.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../External/drop.png" />
+                     </image></ImageView>
+                  <Label fx:id="oneFile" layoutX="146.0" layoutY="312.0" text="One file at a time" />
+                  <Label fx:id="formatLabel" layoutX="111.0" layoutY="342.0" text="Supported formats : *.txt,*.xls" />
+                  <Label layoutX="41.0" layoutY="373.0" text="&lt;Nume&gt; &lt;Prenume&gt; &lt;CNP&gt; &lt;Grupa&gt; &lt;Specializare&gt;" />
+                  <Label layoutX="45.0" layoutY="403.0" text="Specializare : Automatica Romana, Automatica Engleza" />
+                  <Label layoutX="111.0" layoutY="420.0" text="Calculatoare Romana, Calculatoare Engleza" />
+                  <Label id="browseLabel" layoutX="63.0" layoutY="245.0" onMouseClicked="#browseButton" text="Drag and drop or browse">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="splitBar" layoutX="451.0" layoutY="25.0" prefHeight="551.0" prefWidth="4.0" />
+      <JFXButton id="officeAddButtons" layoutX="102.0" layoutY="536.0" onAction="#addButton" text="Add" textFill="#cdcdcd">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="officeAddButtons" layoutX="266.0" layoutY="536.0" onAction="#doneButton" text="Done" textFill="#cdcdcd">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField id="studentAddInput" fx:id="prenumeInput" alignment="CENTER" layoutX="228.0" layoutY="205.0" onKeyReleased="#prenumeReleased" unFocusColor="#455a65" />
+      <JFXTextField id="studentAddInput" fx:id="numeInput" alignment="CENTER" layoutX="228.0" layoutY="142.0" onKeyReleased="#numeReleased" unFocusColor="#455a65" />
+      <JFXTextField id="studentAddInput" fx:id="CNPInput" alignment="CENTER" layoutX="228.0" layoutY="264.0" onKeyReleased="#CNPReleased" unFocusColor="#455a65" />
+      <Text fill="#cdcdcd" layoutX="114.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nume" />
+      <Text fill="#cdcdcd" layoutX="106.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenume" />
+      <Text fill="#cdcdcd" layoutX="118.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNP" />
+      <JFXTextField id="studentAddInput" fx:id="grupaInput" alignment="CENTER" layoutX="228.0" layoutY="324.0" onKeyReleased="#grupaReleased" unFocusColor="#455a65" />
+      <Text fill="#cdcdcd" layoutX="114.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grupa" />
+      <ChoiceBox id="studentAddInput" fx:id="spChoice" layoutX="228.0" layoutY="385.0" onKeyReleased="#specializareReleased" prefHeight="25.0" prefWidth="135.0" />
+      <Text fill="#cdcdcd" layoutX="99.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specializare" />
+      <Label fx:id="succesLabel" layoutX="176.0" layoutY="418.0" text="Adaugat cu succes !" textFill="LIME" visible="false" />
+      <Label fx:id="errorLabel" layoutX="169.0" layoutY="457.0" text="Eroare ! Date invalide !" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>

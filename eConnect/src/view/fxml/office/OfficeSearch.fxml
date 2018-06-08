@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anchorPane" prefHeight="700.0" prefWidth="900.0" stylesheets="@../../../../bin/view/css/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.office.SearchController">
+   <children>
+      <AnchorPane id="splitBar" layoutX="332.0" layoutY="41.0" prefHeight="601.0" prefWidth="5.0" />
+      <JFXTextField id="studentAddInput" fx:id="nume" layoutX="162.0" layoutY="177.0" onKeyReleased="#numeReleased" />
+      <JFXTextField id="studentAddInput" fx:id="prenume" layoutX="162.0" layoutY="241.0" onKeyReleased="#prenumeReleased" />
+      <JFXTextField id="studentAddInput" fx:id="CNP" layoutX="162.0" layoutY="307.0" onKeyReleased="#CNPReleased" />
+      <JFXTextField id="studentAddInput" fx:id="grupa" layoutX="162.0" layoutY="372.0" onKeyReleased="#grupaReleased" />
+      <JFXButton id="officeAddButtons" layoutX="53.0" layoutY="515.0" onAction="#handleClear" text="Clear" textFill="#cdcdcd">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="70.0" layoutY="245.0" text="Nume" textFill="#cdcdcd">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="179.0" text="Prenume" textFill="#cdcdcd">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="309.0" text="CNP" textFill="#cdcdcd">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="374.0" text="Grupa" textFill="#cdcdcd">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="435.0" text="Specializare" textFill="#cdcdcd">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="cautareLabel" layoutX="358.0" layoutY="27.0" text="Cautare dupa:" textFill="#cdcdcd">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <JFXButton id="officeAddButtons" layoutX="192.0" layoutY="515.0" onAction="#handleDone" text="Done" textFill="#cdcdcd">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="cautareLabel1" alignment="CENTER" layoutX="351.0" layoutY="96.0" maxHeight="28.0" maxWidth="70.0" text="nume" textFill="#cdcdcd">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="cautareLabel21" layoutX="451.0" layoutY="55.0" text="Prenume" textFill="#cdcdcd">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="cautareLabel41" layoutX="684.0" layoutY="55.0" text="Grupa" textFill="#cdcdcd">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="cautareLabel31" layoutX="589.0" layoutY="55.0" text="CNP" textFill="#cdcdcd">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="cautareLabel51" layoutX="774.0" layoutY="55.0" text="Specializare" textFill="#cdcdcd">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="cautareLabel11" layoutX="351.0" layoutY="55.0" text="Nume" textFill="#cdcdcd">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="cautareLabel2" alignment="CENTER" layoutX="450.0" layoutY="96.0" maxWidth="110.0" text="prenume" textFill="#cdcdcd">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="cautareLabel3" alignment="CENTER" layoutX="561.0" layoutY="96.0" maxWidth="120.0" text="CNP" textFill="#cdcdcd">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="cautareLabel4" alignment="CENTER" layoutX="685.0" layoutY="96.0" maxWidth="70.0" text="grupa" textFill="#cdcdcd">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="cautareLabel5" alignment="CENTER" layoutX="767.0" layoutY="96.0" maxWidth="120.0" text="specializare" textAlignment="CENTER" textFill="#cdcdcd">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <JFXTextField id="studentAddInput" fx:id="specializare" layoutX="164.0" layoutY="433.0" onKeyReleased="#specializareReleased" />
+      <AnchorPane layoutX="349.0" layoutY="134.0" prefHeight="505.0" prefWidth="537.0">
+         <children>
+            <TableView fx:id="tableView" layoutX="45.0" layoutY="30.0" prefHeight="505.0" prefWidth="537.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="numeCol" prefWidth="94.0" text="Nume" />
+                  <TableColumn fx:id="prenumeCol" prefWidth="103.0" text="Prenume" />
+                  <TableColumn fx:id="CNPCol" prefWidth="115.0" text="CNP" />
+                  <TableColumn fx:id="grupaCol" prefWidth="95.0" text="Grupa" />
+                  <TableColumn fx:id="specializareCol" prefWidth="133.0" text="Specializare" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

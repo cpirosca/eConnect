@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anchorPane" prefHeight="232.0" prefWidth="728.0" stylesheets="@../../../../bin/view/css/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.office.DeleteController">
+   <children>
+      <Label layoutX="110.0" layoutY="57.0" text="Introduceti CNP-ul" textFill="#cdcdcd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField id="studentAddInput" fx:id="searchLabel" layoutX="281.0" layoutY="57.0" prefHeight="25.0" prefWidth="167.0" />
+      <JFXButton id="officeAddButtons" fx:id="doneButton" layoutX="329.0" layoutY="168.0" onAction="#handleDoneButton" prefHeight="39.0" prefWidth="70.0" text="Done" textFill="#cdcdcd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="officeAddButtons" layoutX="523.0" layoutY="54.0" onAction="#handleSearch" prefHeight="32.0" prefWidth="77.0" text="Search" textFill="#cdcdcd" />
+      <Label fx:id="errorLabel" layoutX="309.0" layoutY="120.0" text="CNP Incorrect" textFill="RED" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label id="deleteLabel" fx:id="nume" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="103.0" prefHeight="25.0" prefWidth="77.0" text="Nume" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label id="deleteLabel" fx:id="prenume" alignment="CENTER" layoutX="102.0" layoutY="103.0" prefHeight="25.0" prefWidth="132.0" text="Prenume" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label id="deleteLabel" fx:id="CNP" alignment="CENTER" layoutX="233.0" layoutY="103.0" prefHeight="25.0" prefWidth="167.0" text="1234567890123" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label id="deleteLabel" fx:id="grupa" alignment="CENTER" layoutX="400.0" layoutY="103.0" prefHeight="25.0" prefWidth="93.0" text="Grupa" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label id="deleteLabel" fx:id="specializare" alignment="CENTER" layoutX="493.0" layoutY="103.0" prefHeight="25.0" prefWidth="126.0" text="Specializare" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <JFXButton id="officeAddButtons" fx:id="deleteButton" contentDisplay="CENTER" layoutX="637.0" layoutY="96.0" onAction="#handleDeleteButton" prefHeight="39.0" prefWidth="77.0" text="Delete?" textAlignment="CENTER" textFill="#cdcdcd" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="succesLabel" alignment="CENTER" layoutX="311.0" layoutY="117.0" text="CNP sters !" textAlignment="CENTER" textFill="#00ff1e" visible="false">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

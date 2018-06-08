@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="719.0" stylesheets="@../../../../bin/view/css/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.login.LoginController">
+   <children>
+      <AnchorPane layoutX="375.0" layoutY="72.0" prefHeight="306.0" prefWidth="301.0" style="-fx-background-color: #006599; -fx-background-radius: 10;">
+         <children>
+            <TextField id="userInput" fx:id="userInput" alignment="CENTER" layoutX="34.0" layoutY="46.0" onKeyReleased="#userReleased" prefHeight="44.0" prefWidth="233.0" promptText="Username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField id="userInput" fx:id="passwordInput" alignment="CENTER" layoutX="34.0" layoutY="118.0" onKeyReleased="#passReleased" prefHeight="44.0" prefWidth="233.0" promptText="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <JFXCheckBox fx:id="rememberMe" layoutX="99.0" layoutY="274.0" text="Remember me" textFill="#cdcdcd" />
+            <JFXButton id="loginButtons" fx:id="clearButton" layoutX="124.0" layoutY="178.0" onAction="#handleClear" text="Clear" textFill="#cdcdcd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="loginButtons" fx:id="loginButton" layoutX="76.0" layoutY="218.0" onAction="#handleLogin" prefHeight="44.0" prefWidth="149.0" text="Login" textFill="#cdcdcd">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <Text fx:id="incorrect" fill="RED" layoutX="37.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Incorrect username/password!" textAlignment="CENTER" visible="false">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="357.0" fitWidth="355.0" layoutX="14.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../External/login.png" />
+         </image>
+      </ImageView>
+      <MenuBar prefHeight="0.0" prefWidth="719.0">
+        <menus>
+          <Menu text="Help">
+            <items>
+              <MenuItem onAction="#handleHelpAbout" text="About" />
+                  <MenuItem onAction="#handleHelpAdmin" text="Admin" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
